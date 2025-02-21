@@ -130,10 +130,17 @@
           >
         </li>
       </nav>
-      
+      <script>
+        const hamburger = document.querySelector("#hamburger")
+        const menu = document.querySelector("#menu")
+
+        hamburger.addEventListener("click", ()=>{
+        menu.classList.toggle("hidden")
+        })
+      </script>
       <!-- intro content  !-->
       
-      <div class=" flex  items-center flex-col bg-cover bg- mt-10 h-full bg-opacity-25 static justify-center inset-0 bg-[url('./assets/images/camerabg.png')] '">
+      <div class=" flex  items-center flex-col bg-cover bg- mt-10 h-full bg-opacity-25 static justify-center inset-0 bg-[url('assets/images/camerabg.png')] '">
         
         
         <div class=" inset-0 absolute  bg-gradient-to-b from-black to-transparent"></div>
@@ -144,7 +151,7 @@
             id="carousel"
             class="flex relative transition-transform px-10 -z-40 duration-700 ease-in-out"
           >
-            <img class="w-auto object-contain mx-1 h-56 md:h-96 lg:h-big flex-shrink-0" src="../assets/images/hero-image.JPG" alt="" />
+            <img class="w-auto object-contain mx-1 h-56 md:h-96 lg:h-big flex-shrink-0" src="assets/images/hero-image.JPG" alt="" />
             <div class="absolute w-auto p4 bg-black/50 -bottom-4 hover:bottom-0 transition-all duration-300 hover:absolute"></div>
             <img class="w-auto object-contain mx-1 h-56 md:h-96 lg:h-big flex-shrink-0" src="assets/images/DSC_0445.jpg" alt="" />
             <img class="w-auto object-contain mx-1 h-56 md:h-96 lg:h-big flex-shrink-0" src="assets/images/IMG_4531.JPG" alt="" />
